@@ -1,0 +1,244 @@
+@media screen and (max-width: 1370px) and (min-width: 1280px) {
+	.resp-tabs-list li {padding: 13px 25px!important;}
+}
+@media screen and (max-width: 1279px) and (min-width: 1111px) {
+	.resp-tabs-list li {padding: 13px 16px!important;}
+	.menulist li {width: 33%}
+}
+@media screen and (max-width: 1110px) and (min-width: 1025px) {
+	nav.main li {padding: 0 8px;}
+	.event-packages li article {padding: 15px;}
+	.event-packages li article h5 {font: 14px/20px 'avenirblack'; color: #818181; padding-bottom: 20px; background: url(../images/dividergray.png) no-repeat center bottom; margin-bottom:15px; }
+	
+	nav.insidemenu li {padding: 0 8px;}
+	.venue-partners {margin-left: 15px;}
+	.venue-partners li {width: 19%;}
+	.mcontent main article {padding: 35px 43% 35px 5%;}
+		.mcontent main article ul {padding: 0; width: 100%;}
+	.mcontent main picture {width: 40%}
+	main.packageservices article {padding: 35px 5% 35px 43%!important;}
+	main.reservation article {padding: 35px 5% 35px 5%!important;}
+	main.reservation article ul {width: 49%; padding: 0 20px; list-style: none; display: inline-table; vertical-align: top; font: 18px/24px 'avenirregular'; }
+	.carousel-cell {width: 33%}
+
+	.resp-tabs-list li {padding: 13px 16px!important; font-size: 23px!important;}
+	.menulist li {width: 33%}
+}
+/************************************************************************************
+smaller than 1025
+*************************************************************************************/
+@media screen and (max-width: 1024px) and (min-width: 800px) {
+	.homebg, .event-packages, .intro-content {background-attachment: initial!important;}
+	nav.main li {padding: 0;}
+	nav.main li a {background-size: 100%; height: auto; width: auto; padding: 73px 12px 0; }
+	.event-packages ul {height: auto!important;}
+	.event-packages li {width: 100%;}
+	.event-packages li:nth-child(2) picture {float: right;}
+	.event-packages li:nth-child(3) picture {float: left;}
+		.event-packages li:nth-child(2) picture span { left: 0; right: auto; background: url(../images/arrowright-white.png); }
+		.event-packages li:nth-child(3) picture span { left: auto; right: 0; background: url(../images/arrowleft-white.png); }
+		.event-packages li:nth-child(2):hover picture span {background: url(../images/arrowright-gold.png);}
+		.event-packages li:nth-child(3):hover picture span {background: url(../images/arrowleft-gold.png);}
+	.event-packages li:nth-child(3) article {left: auto; right: 0;}
+	.event-packages li:nth-child(2) article {left: 0; right: auto;}
+	.clients li {width: 33%;}
+	.calltoaction {text-align: center;}
+	.calltoaction h2 span {display: block; float: none; margin-top: 20px}
+
+	nav.insidemenu {padding-left: 100px;}
+	nav.insidemenu li {padding: 0 0;}
+	.venue-partners {margin-left: 15px;}
+	.venue-partners li {width: 19%;}
+
+	.intro-content .pagewrapper aside {width: 40%;}
+	.intro-content .pagewrapper article {padding-left: 44%;}
+	.intro-content .pagewrapper article div.venue, .intro-content .pagewrapper article div.selectedtitle {width: 100%!important; margin-bottom: 0!important;}
+	.intro-content .pagewrapper article h1 {font: 48px/54px 'Satisfy', cursive; color: #62a644; text-align: center; padding: 0 30px; background: white;}
+	.intro-content .pagewrapper article h3 {font: 18px/24px 'avenirblack'; color: #e4b639; margin-bottom: 10px;}
+	.intro-content .pagewrapper article h2 {font: 24px/30px 'avenirregular'; color: #616161; margin-bottom: 15px;}
+	.intro-content .pagewrapper article p {font: 16px/22px 'avenirregular'; color: #616161; margin-bottom: 40px;}
+	.intro-content .pagewrapper article p a {font: 18px/24px 'Times New Roman'}		
+
+	.mcontent main article {padding: 35px 5%;}
+	main.packageservices article {padding: 35px 5%!important;}
+	.mcontent main picture {width: 100%; padding-bottom: 35px; position: relative!important; height: 350px; top: auto; right: auto; bottom: auto;}
+	.mcontent main picture img {object-fit: contain;}
+
+	.carousel-cell {width: 33%}
+
+	.resp-tabs-list li {padding: 13px 16px!important; font-size: 20px!important;}
+	.menulist li, .packagelist li {width: 49%}
+	.wid33 li {font-size: 20px!important; padding: 13px 0px!important; }
+}
+
+@media screen and (max-width: 799px) and (min-width: 641px) {
+	.homebg, .event-packages, .intro-content {background-attachment: initial!important;}
+	.homebg {height: 100%;}
+	header {padding-top: 130px;}
+	nav.main {bottom: auto; top: 0;}
+	nav.main li {padding: 0 2px; font: 14px/20px 'avenirregular'}
+	nav.main li a { height: auto; width: auto; padding: 73px 11px 0; }
+	nav.main li:nth-child(2) a {padding: 73px 16px 0;} 
+	.event-packages ul {height: auto!important;}
+	.event-packages li {width: 100%;}
+	.event-packages li:nth-child(2) picture {float: right;}
+	.event-packages li:nth-child(3) picture {float: left;}
+		.event-packages li:nth-child(2) picture span { left: 0; right: auto; background: url(../images/arrowright-white.png); }
+		.event-packages li:nth-child(3) picture span { left: auto; right: 0; background: url(../images/arrowleft-white.png); }
+		.event-packages li:nth-child(2):hover picture span {background: url(../images/arrowright-gold.png);}
+		.event-packages li:nth-child(3):hover picture span {background: url(../images/arrowleft-gold.png);}
+	.event-packages li:nth-child(3) article {left: auto; right: 0;}
+	.event-packages li:nth-child(2) article {left: 0; right: auto;}
+	.clients li {width: 49%;}
+	.calltoaction {text-align: center;}
+	.calltoaction h2 span {display: block; float: none; margin-top: 20px}
+
+	header.inside-template aside {width: 150px; position: relative; float: none; margin: 0 auto}
+
+	nav.insidemenu .toggle-menu {display: block;}
+	nav.insidemenu {width: 100px; padding-left: 0; position: absolute; top: 40%; left: 0px;}
+	nav.insidemenu ul {display: none;}
+	.venue-partners {margin-left: 15px;}
+	.venue-partners li {width: 24%;}
+
+	.intro-content .pagewrapper aside {width: 40%}
+	.intro-content .pagewrapper article {padding-left: 44%;}
+	.intro-content .pagewrapper article div.venue, .intro-content .pagewrapper article div.selectedtitle {width: 100%!important; margin-bottom: 0!important;}
+	.intro-content .pagewrapper article h1 {font: 48px/54px 'Satisfy', cursive; color: #62a644; text-align: center; padding: 0 30px; background: white;}
+	.intro-content .pagewrapper article h3 {font: 18px/24px 'avenirblack'; color: #e4b639; margin-bottom: 10px;}
+	.intro-content .pagewrapper article h2 {font: 24px/30px 'avenirregular'; color: #616161; margin-bottom: 15px;}
+	.intro-content .pagewrapper article p {font: 16px/22px 'avenirregular'; color: #616161; margin-bottom: 40px;}
+	.intro-content .pagewrapper article p a {font: 18px/24px 'Times New Roman'}		
+	.intro-content h4 {font: 24px/30px 'avenirheavy';}
+	.mcontent main article, main.packageservices article {padding: 35px 5%;}
+	main.reservation article ul {width: 100%}
+	.mcontent main picture {width: 100%; padding-bottom: 35px; position: relative!important; height: 350px; top: auto; right: auto; bottom: auto;}
+	.mcontent main picture img {object-fit: contain;}
+	.carousel-cell {width: 33%}
+	.menulist, .packagelist {padding: 30px 0;}
+	.menulist li, .packagelist li {width: 49%}
+	.resp-tabs-container {padding: 0!important;}
+}
+
+/************************************************************************************
+smaller than 641
+*************************************************************************************/
+@media screen and (max-width: 640px) and (min-width: 481px) {
+	.homebg, .event-packages, .intro-content {background-attachment: initial!important;}
+	.homebg {height: 100%;}
+	header {padding-top: 85px;}
+	nav.main {bottom: auto; top: 15px; left: 15px; width: 100px; height: 35px; padding: 5px; }
+	nav.main ul {display: none;}
+	.toggle-menu {display: block;}
+	h3 span, h3 span span, .event-packages .title h3 span, .event-packages .title h3 span span {padding: 0!important; background-image: none; text-align: center; float: none; height: auto; }
+	
+	.aboutus aside, .aboutus article {width: 100%;}
+	.aboutus article p {font: 18px/24px 'avenirregular'}
+	.event-packages ul {height: auto!important; margin-top: 0;}
+	.event-packages li {width: 100%; height: auto!important; margin-bottom: 15px;}
+	.event-packages li:nth-child(even) picture {float: right!important; width: 100%;}
+	.event-packages li:nth-child(odd) picture {float: left!important; width: 100%}
+		.event-packages li picture span { display: none; }
+		
+	.event-packages li article {left: auto; right: auto; position: relative; width: 100%; height: auto!important;}
+	.clients ul, .container {margin-top: 0;}
+	.clients li {width: 49%;}
+	.calltoaction {text-align: center;}
+	.calltoaction h2 span {display: block; float: none; margin-top: 20px}
+	.calltoaction h2 {font: 36px/42px 'avenirblack', serif;}
+
+	.aboutus article p a, .calltoaction h2 span a, .clients p a {font: 18px/24px 'Times New Roman'}
+
+	header.inside-template aside {width: 150px; position: relative; float: none; margin: 0 auto}
+
+	nav.insidemenu .toggle-menu {display: block;}
+	nav.insidemenu {width: 100px; padding-left: 0; position: absolute; top: 40%; left: 0px;}
+	nav.insidemenu ul {display: none;}
+	.venue-partners {margin-left: 15px;}
+	.venue-partners li {width: 49%;}
+
+	.intro-content .pagewrapper aside {width: 100%; height: 200px; position: relative; background: rgba(0,0,0,0.5);}
+	.intro-content .pagewrapper aside img {object-fit: contain;}
+	.intro-content .pagewrapper article {padding-left: 50px;}
+	.intro-content .pagewrapper article div.venue, .intro-content .pagewrapper article div.selectedtitle {width: 100%!important; margin-bottom: 0!important;}
+	.intro-content .pagewrapper article h1 {font: 48px/54px 'Satisfy', cursive; color: #62a644; text-align: center; padding: 0 30px; background: white;}
+	.intro-content .pagewrapper article h3 {font: 18px/24px 'avenirblack'; color: #e4b639; margin-bottom: 10px;}
+	.intro-content .pagewrapper article h2 {font: 24px/30px 'avenirregular'; color: #616161; margin-bottom: 15px;}
+	.intro-content .pagewrapper article p {font: 16px/22px 'avenirregular'; color: #616161; margin-bottom: 40px;}
+	.intro-content .pagewrapper article p a {font: 18px/24px 'Times New Roman'}		
+	.intro-content h4 {font: 20px/26px 'avenirheavy';}
+
+	.mcontent h3 {font: 48px/54px 'Satisfy', cursive;}
+	.mcontent main article, main.packageservices article {padding: 35px 5%!important;}
+	.mcontent main article ul, main.reservation article ul {width: 100%}
+	.mcontent main picture {width: 100%; padding-bottom: 35px; position: relative!important; height: 350px; top: auto; right: auto; bottom: auto;}
+	.mcontent main picture img {object-fit: contain;}
+	.carousel-cell {width: 100%}
+
+	.menulist, .packagelist {padding: 30px 0;}
+	.menulist li, .packagelist li {width: 100%; }
+	.resp-tabs-container {padding: 0!important;}
+	.foodthb img {object-fit: contain;}
+}
+/************************************************************************************
+smaller than 376
+*************************************************************************************/
+@media screen and (max-width: 480px) and (min-width: 320px) {
+	.homebg, .event-packages, .intro-content {background-attachment: initial!important;}
+	.homebg {height: 100%;}
+	header {padding-top: 85px;}
+	nav.main {bottom: auto; top: 15px; left: 15px; width: 100px; height: 35px; padding: 5px; }
+	nav.main ul {display: none;}
+	.toggle-menu {display: block;}
+	h3 span, h3 span span, .event-packages .title h3 span, .event-packages .title h3 span span {padding: 0!important; background-image: none; text-align: center; float: none; height: auto; }
+	h3 {font: 44px/50px 'Satisfy', cursive; color: #62a644;}
+	.aboutus aside, .aboutus article {width: 100%;}
+	.aboutus article p {font: 18px/24px 'avenirregular'}
+	.event-packages ul {height: auto!important; margin-top: 0;}
+	.event-packages li {width: 100%; height: auto!important; margin-bottom: 15px;}
+	.event-packages li:nth-child(even) picture {float: right!important; width: 100%;}
+	.event-packages li:nth-child(odd) picture {float: left!important; width: 100%}
+		.event-packages li picture span { display: none; }
+		
+	.event-packages li article {left: auto; right: auto; position: relative; width: 100%; height: auto!important;}
+	.clients ul, .container {margin-top: 0;}
+	.clients li {width: 100%;}
+	.calltoaction {text-align: center;}
+	.calltoaction h2 span {display: block; float: none; margin-top: 20px}
+	.calltoaction h2 {font: 36px/42px 'avenirblack', serif;}
+
+	.aboutus article p a, .calltoaction h2 span a, .clients p a {font: 18px/24px 'Times New Roman'}
+
+	header.inside-template aside {width: 150px; position: relative; float: right; margin: 0 auto}
+
+	nav.insidemenu .toggle-menu {display: block;}
+	nav.insidemenu {width: 100px; padding-left: 0; position: absolute; top: 40px; left: 0px;}
+	nav.insidemenu ul {display: none;}
+	.venue-partners {margin-left: 0px;}
+	.venue-partners li {width: 49%;}
+
+	.intro-content .pagewrapper aside {width: 100%; height: 200px; position: relative; background: rgba(0,0,0,0.5);}
+	.intro-content .pagewrapper aside img {object-fit: contain;}
+	.intro-content .pagewrapper article {padding: 25px; height: auto;}
+	.intro-content .pagewrapper article div.venue, .intro-content .pagewrapper article div.selectedtitle {width: 100%!important; padding: 0!important; margin-bottom: 0!important;}
+	.intro-content .pagewrapper article h1 {font: 48px/54px 'Satisfy', cursive; color: #62a644; text-align: center; padding: 0 30px; background: white;}
+	.intro-content .pagewrapper article h3 {font: 18px/24px 'avenirblack'; color: #e4b639; margin-bottom: 10px;}
+	.intro-content .pagewrapper article h2 {font: 24px/30px 'avenirregular'; color: #616161; margin-bottom: 15px;}
+	.intro-content .pagewrapper article p {font: 16px/22px 'avenirregular'; color: #616161; margin-bottom: 40px;}
+	.intro-content .pagewrapper article p a, input[type="submit"] {font: 18px/24px 'Times New Roman'}		
+	.intro-content h4 {font: 18px/24px 'avenirheavy';}
+
+	.mcontent h3 {font: 48px/54px 'Satisfy', cursive;}
+	.mcontent main article, main.packageservices article {padding: 35px 5%!important;}
+	.mcontent main article ul {width: 100%}
+	.mcontent main picture {width: 100%; padding-bottom: 0; height: auto!important; position: relative!important; height: 350px; top: auto; right: auto; bottom: auto;}
+	.mcontent main picture img {object-fit: initial; height: auto;}
+	.carousel-cell {width: 100%}
+	.others {padding: 20px 10px 0!important;}
+	.gallery {padding: 30px 10px 25px;}
+	.menulist, .packagelist {padding: 30px 0;}
+	.menulist li, .packagelist li {width: 100%}
+	.resp-tabs-container {padding: 0!important;}
+	.foodthb img {object-fit: contain;}
+}
+
