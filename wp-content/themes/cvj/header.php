@@ -11,7 +11,7 @@
 * @since 1.0
 * @version 1.0
 */
-
+$menu_obj = wp_get_nav_menu_items('main'); # wp post object for `main` wp menu
 ?>
 <!doctype html>
 <html lang="en">
@@ -36,42 +36,58 @@
 </head>
 
 
-<body>
-	<div class="homebg">
-		<header>
-			<aside>
-				<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/cvj-logo.png"></a>
-				<h1>Seasoned to Perfection, Served in Style</h1>
-				<h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </h2>
-			</aside>
-		</header>
-		<nav class="main">
-			<a class="toggle-menu menu-left push-body fleft">MENU</a>
-			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">About Us</a></li>
-				<li><a href="#">Services</a></li>
-				<li><a href="#">Packages</a></li>
-				<li><a href="#">Menu</a></li>
-				<li><a href="#">Venues</a></li>
-				<li><a href="#">Contact</a></li>
-				<li><a href="#">Food Tasting</a></li>
-			</ul>
-		</nav>
-
-		<!-- Mobile Menu -->
-		<div class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left">
-
-			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">About Us</a></li>
-				<li><a href="#">Services</a></li>
-				<li><a href="#">Packages</a></li>
-				<li><a href="#">Menu</a></li>
-				<li><a href="#">Venues</a></li>
-				<li><a href="#">Contact</a></li>
-				<li><a href="#">Food Tasting</a></li>
-			</ul>
+<?php if(is_front_page()):  # if is front page ?>
+	<body>
+		<div class="homebg">
+			<header>
+				<aside>
+					<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/cvj-logo.png"></a>
+					<h1>Seasoned to Perfection, Served in Style</h1>
+					<h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </h2>
+				</aside>
+			</header>
+			<nav class="main">
+				<a class="toggle-menu menu-left push-body fleft">MENU</a>
+				<ul>
+					<?php  foreach ($menu_obj as $obj): ?>
+						<li><a href="<?= $obj->url; ?>"><?= $obj->title; ?></a></li>
+					<?php endforeach; ?>
+				</ul>
+			</nav>
+			<!-- Mobile Menu -->
+			<div class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left">
+				<ul>
+					<?php  foreach ($menu_obj as $obj): ?>
+						<li><a href="<?= $obj->url; ?>"><?= $obj->title; ?></a></li>
+					<?php endforeach; ?>
+				</ul>
+			</div>
+			<div class="overlay"></div>
 		</div>
-		<div class="overlay"></div>
-	</div>
+
+	<?php else: # if not homepage ?>
+		<body>
+			<header class="inside-template">
+				<div class="pagewrapper">
+					<aside>
+						<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/cvj-logo.jpg"></a>
+					</aside>
+					<nav class="insidemenu">
+						<a class="toggle-menu menu-left push-body fleft">MENU</a>
+						<ul>
+							<?php  foreach ($menu_obj as $obj): ?>
+								<li><a href="<?= $obj->url; ?>"><?= $obj->title; ?></a></li>
+							<?php endforeach; ?>
+						</ul>
+					</nav>
+					<!-- Mobile Menu -->
+					<div class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left">
+						<ul>
+							<?php  foreach ($menu_obj as $obj): ?>
+								<li><a href="<?= $obj->url; ?>"><?= $obj->title; ?></a></li>
+							<?php endforeach; ?>
+						</ul>
+					</div>
+				</div>
+			</header>
+		<?php endif; ?>
