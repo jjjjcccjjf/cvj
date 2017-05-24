@@ -18,12 +18,13 @@ $menu_obj = wp_get_nav_menu_items('main'); # wp post object for `main` wp menu
 <head>
 	<meta charset="utf-8">
 	<title>CVJ Food Catering</title>
-	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/styles-min.css">
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/responsive-min.css">
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/jPushMenu-min.css">
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/flickity-min.css">
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/magnific-popup-min.css">
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/easy-responsive-tabs.css">
 	<link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
 
 	<!--[if lt IE 9]>
@@ -41,7 +42,7 @@ $menu_obj = wp_get_nav_menu_items('main'); # wp post object for `main` wp menu
 		<div class="homebg">
 			<header>
 				<aside>
-					<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/cvj-logo.png"></a>
+					<a href="<?php echo site_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/cvj-logo.png"></a>
 					<h1>Seasoned to Perfection, Served in Style</h1>
 					<h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </h2>
 				</aside>
@@ -70,7 +71,7 @@ $menu_obj = wp_get_nav_menu_items('main'); # wp post object for `main` wp menu
 			<header class="inside-template">
 				<div class="pagewrapper">
 					<aside>
-						<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/cvj-logo.jpg"></a>
+						<a href="<?php echo site_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/cvj-logo.jpg"></a>
 					</aside>
 					<nav class="insidemenu">
 						<a class="toggle-menu menu-left push-body fleft">MENU</a>

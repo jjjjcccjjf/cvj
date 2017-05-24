@@ -31,6 +31,7 @@ jQuery(document).ready(function($) {
 		type:'inline',
 		closeBtnInside: true
 	});
+	$('.image-link').magnificPopup({type:'image'});
 });
 </script>
 

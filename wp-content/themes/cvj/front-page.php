@@ -10,8 +10,8 @@ while(have_posts()): the_post();
 		<div class="container">
 			<aside><img src="<?php echo get_template_directory_uri(); ?>/assets/images/aboutimg.jpg"></aside>
 			<article>
-				<p>"Seasoned to Perfection… Served in Style"  has been our company's guiding principle in achieving the best food catering service for each and every one of our clients.  May it be a Wedding,  a Debut Party,  Corporate Event,  Adult or Kiddy Party,  each and every catering event is treated with greatest care, professionalism, and attention to details...  </p>
-				<p><a href="#">Learn More</a></p>
+				<?php the_content(); ?>
+				<p><a href="<?php echo get_permalink(9)?>">Learn More</a></p>
 			</article>
 		</div>
 	</div>
@@ -74,11 +74,9 @@ while(have_posts()): the_post();
 	<div class="pagewrapper">
 		<div class="title"><h3><span><span>Clients</span></span></h3></div>
 		<ul>
-			<li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/client.jpg"></li>
-			<li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/client.jpg"></li>
-			<li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/client.jpg"></li>
-			<li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/client.jpg"></li>
-			<li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/client.jpg"></li>
+			<?php if( have_rows('clients') ): while ( have_rows('clients') ) : the_row(); ?>
+				<li><img src="<?php echo get_sub_field('clients'); ?>"></li>
+			<?php endwhile; else : endif; ?>
 		</ul>
 		<p><a href="#">View More</a></p>
 	</div>
@@ -87,7 +85,7 @@ while(have_posts()): the_post();
 <section class="calltoaction">
 	<div class="pagewrapper">
 		<h2>Try our Customized Packages
-			<span><a href="#">Inquire Now</a></span>
+			<span><a href="<?php echo get_permalink(33) ?>">Inquire Now</a></span>
 		</h2>
 	</div>
 </section>
