@@ -12,57 +12,42 @@ while(have_posts()): the_post();
     <article>
       <div class="selectedtitle"><h1>Contact Us</h1></div>
       <h2 class="gold">CVJ Food Catering</h2>
-      <p>Address<br>
-        Contact No.<br>
-        Email Address</p>
-        <p><a href="#">View Google Map</a></p>
-      </article>
-    </div>
-  </section>
+      <p>
+        <?php the_field('address'); ?>
+        <br>
+        Telephone:
+        <?php if( have_rows('telephone') ): while ( have_rows('telephone') ) : the_row(); ?>
+          <?php echo get_sub_field('telephone'); ?> <br>
+        <?php endwhile; else : endif; ?>
+          Fax:
+          <?php if( have_rows('fax') ): while ( have_rows('fax') ) : the_row(); ?>
+            <?php echo get_sub_field('fax'); ?> <br>
+          <?php endwhile; else : endif; ?>
+            Mobile:
+            <?php if( have_rows('mobile') ): while ( have_rows('mobile') ) : the_row(); ?>
+              <?php echo get_sub_field('mobile'); ?> <br>
+            <?php endwhile; else : endif; ?>
+              <?php the_field('email'); ?>
+            </p>
+            <p><a href="#">View Google Map</a></p>
+          </article>
+        </div>
+      </section>
 
-  <section class="mcontent">
-    <div class="pagewrapper">
-      <main class="reservation">
-        <aside>
-          <h3>Send us an inquiry</h3>
-          <p>Fill out the form below.</p>
-        </aside>
-        <article>
-          <ul>
-            <li>
-              <label>Name</label>
-              <input type="text" name="">
-            </li>
-            <li>
-              <label>Email</label>
-              <input type="email" name="">
-            </li>
-            <li>
-              <label>Contact Number</label>
-              <input type="text" name="">
-            </li>
-          </ul>
-          <ul>
-            <li>
-              <label>Subject</label>
-              <select>
-                <option>General Inquiry</option>
-              </select>
-            </li>
-            <li>
-              <label>Message</label>
-              <textarea></textarea>
-            </li>
-
-          </ul>
-          <p><input type="submit" name="" value="SUBMIT"></p>
-        </article>
-      </main>
+      <section class="mcontent">
+        <div class="pagewrapper">
+          <main class="reservation">
+            <aside>
+              <h3>Send us an inquiry</h3>
+              <p>Fill out the form below.</p>
+            </aside>
+            <?php the_content(); ?>
+          </main>
 
 
-    </div>
-  </section>
+        </div>
+      </section>
 
-  <?php
-endwhile;
-get_footer();
+      <?php
+    endwhile;
+    get_footer();

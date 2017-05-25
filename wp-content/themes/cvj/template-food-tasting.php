@@ -11,17 +11,15 @@ while(have_posts()): the_post();
     </aside>
     <article>
       <div class="selectedtitle"><h1>Food Tasting</h1></div>
-      <h2 class="gold">The Blue Leaf Pavilion</h2>
-      <p>221 Tandang Sora Ave., Project 8, Quezon City, Metro Manila</p>
-      <h4>April 5, 2016, Sunday | 10am - 4pm</h4>
-      <p><a href="#">Reserve Now</a></p>
+      <?php the_content(); ?>
+      <p><a href="#food-tasting">Reserve Now</a></p>
     </article>
   </div>
 </section>
 
 <section class="mcontent">
   <div class="pagewrapper">
-    <main class="reservation">
+    <main class="reservation" id="food-tasting">
       <aside>
         <h3>Reserve your seat for our Grand Food Tasting</h3>
         <p>Fill out the form below to reserve a seat to the Grand Food Tasting.</p>

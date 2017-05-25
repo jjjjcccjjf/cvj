@@ -74,12 +74,10 @@ while(have_posts()): the_post();
   <p><?php the_field("footnote") ?></p>
 </section>
 
-
 </div>
 </section>
 
 <p class="inquire"><a href="#">INQUIRE NOW</a></p>
-
 
 <?php
 endwhile;

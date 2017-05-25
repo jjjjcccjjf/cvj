@@ -85,7 +85,7 @@ while(have_posts()): the_post();
 <section class="calltoaction">
 	<div class="pagewrapper">
 		<h2>Try our Customized Packages
-			<span><a href="<?php echo get_permalink(33) ?>">Inquire Now</a></span>
+				<span><a href="<?php echo get_permalink(24) ?>">Inquire Now</a></span>
 		</h2>
 	</div>
 </section>
