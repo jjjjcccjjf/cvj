@@ -54,6 +54,26 @@ while(have_posts()): the_post();
 <?php endwhile; ?>
 <?php endif;  ?>
 
+<!-- AFTER INCLUSIONS  -->
+
+<aside class="gallery">
+  <h3>Gallery</h3>
+    <div class="carousel"
+    data-flickity='{ "wrapAround": true, "pageDots": false }'>
+    <?php if( have_rows('gallery') ): while ( have_rows('gallery') ) : the_row(); ?>
+  <div class="carousel-cell">
+    <a href="<?php echo get_sub_field('image'); ?>" class="image-link">
+      <img src="<?php echo get_sub_field('image'); ?>">
+    </a>
+  </div>
+<?php endwhile; else : endif; ?>
+
+  </div>
+</aside>
+<section class="others">
+  <p><?php the_field("footnote") ?></p>
+</section>
+
 
 </div>
 </section>
