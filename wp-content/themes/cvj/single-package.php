@@ -22,19 +22,28 @@ while(have_posts()): the_post();
 
     <?php
     $ctr = 0;
+    /** Parent Repeater **/
     if( have_rows('package_inclusions') ):
       while( have_rows('package_inclusions') ): the_row(); ?>
       <main class="<?php echo ((++$ctr%2) != 0) ? 'packagedetail' : 'packageservices'; # if counter is odd ?>">
         <article>
-          <h3><?php the_sub_field('panel_header'); ?></h3>
-          <?php
-          if( have_rows('package_inclusions_outer') ): ?>
+          <h3><?php
+          /** Parent Repeater Fields **/
+          the_sub_field('panel_header');
+          ?></h3>
           <ul>
             <?php
-            while( have_rows('package_inclusions_outer') ): the_row();     ?>
-            <li><?php the_sub_field('package_inclusions_inner'); ?></li>
-          </ul>
-        <?php endwhile; ?>
+            $li_ctr = 0;
+            if( have_rows('package_inclusions_ul') ): ?>
+            <?php
+            while( have_rows('package_inclusions_ul') ): the_row(); ?>
+            <li><?php the_sub_field('package_inclusions_li'); ?></li>
+            <?php if(++$li_ctr%6 == 0): # if 6 items?>
+            </ul>
+            <ul>
+            <?php endif; # / if 6 items?>
+          <?php endwhile; ?>
+        </ul>
       <?php endif;   ?>
     </article>
     <picture>
