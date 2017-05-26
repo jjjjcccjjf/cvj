@@ -41,7 +41,7 @@ while(have_posts()): the_post();
               <h3>Send us an inquiry</h3>
               <p>Fill out the form below.</p>
             </aside>
-            <?php the_content(); ?>
+            <?php echo do_shortcode('[contact-form-7 id="8" title="Contact"]'); ?>
           </main>
 
 
